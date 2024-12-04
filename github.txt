@@ -123,3 +123,28 @@ git config --list
 등록이 잘못되었을경우(삭제)
 git config --unset --global user.email "이메일주소"
 git config --unset --global user.name "이름"
+
+형상관리가 진행되는 폴더 -> 작업트리(working tree)
+ - 파일의 수정, 저장등의 작업을 하는 디렉토리
+ - 스테이지를 거쳐 깃 저장소로 이동
+
+스테이지 : 버전으로 만들 파일들이 대기하는 장소
+ - 파일 하나하나가 작업트리로 생성. 이중 몇개만 보내고 싶으면
+   그 해당하는 파일들만 넘겨주면됨.
+ - 작업트리가 10개 생성됐다 가정하고 4개만 등록하고 싶으면 
+   4개만 넘겨주면됨.
+
+스테이지에 파일 추가.
+ git add 파일명(* / 전부다)
+
+스테이지에 업로드된 파일확인
+git status
+
+git repository로 commit
+ git commit -m "커밋메세지"
+
+github로 업로드 시도
+remote 설정
+
+처음 연결
+git remote add origin https://github.com/jmcho2010/estGitStudy.git
